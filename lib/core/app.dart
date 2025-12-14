@@ -13,6 +13,7 @@ class App extends StatelessWidget {
       splitScreenMode: true,
       builder: (_, child) {
         return MaterialApp(
+          debugShowCheckedModeBanner: false,
           theme: AppTheme.light,
           darkTheme: AppTheme.dark,
           navigatorKey: AppRouterHelpers.navigatorKey,

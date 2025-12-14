@@ -37,6 +37,8 @@ dependencies:
   flutter_riverpod: ^3.0.3
   dio: ^5.9.0
   flutter_screenutil: ^5.9.3
+  file_picker: ^10.3.7
+  google_fonts: ^6.3.3
 
 dev_dependencies:
   flutter_test:

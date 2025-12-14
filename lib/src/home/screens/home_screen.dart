@@ -1,7 +1,11 @@
 import 'package:dompetku/core/routers/app_router_helpers.dart';
 import 'package:dompetku/src/home/widgets/app_bar_home.dart';
+import 'package:dompetku/src/home/widgets/product_lists.dart';
+import 'package:dompetku/src/home/widgets/product_search.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+//HOME SCREEN
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
   @override
@@ -15,7 +19,7 @@ class HomeScreen extends StatelessWidget {
         label: Text(24.toString()),
       ),
       appBar: AppBarHome(),
-      body: Text("WELCOME"),
+      body: Column(children: [ProductSearch(), ProductLists()]),
     );
   }
 }

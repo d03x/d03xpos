@@ -16,10 +16,12 @@ class AppBarHome extends StatelessWidget implements PreferredSizeWidget {
           child: Row(
             children: [
               IconButton(
+                tooltip: "Cari Produk",
                 onPressed: () => AppRouterHelpers.pushNamed(AppRoute.qrcode),
                 icon: Icon(Icons.search),
               ),
               IconButton(
+                tooltip: "Scan Produk",
                 onPressed: () => AppRouterHelpers.pushNamed(AppRoute.qrcode),
                 icon: Icon(Icons.qr_code_2_outlined),
               ),
