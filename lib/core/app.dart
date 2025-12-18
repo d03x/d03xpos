@@ -15,10 +15,11 @@ class App extends StatelessWidget {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           theme: AppTheme.light,
+          themeMode: ThemeMode.light,
           darkTheme: AppTheme.dark,
           navigatorKey: AppRouterHelpers.navigatorKey,
           onGenerateRoute: AppRouterHelpers.generate,
-          initialRoute: AppRoute.home,
+          initialRoute: AppRoute.defaultPage,
         );
       },
     );

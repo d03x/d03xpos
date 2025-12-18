@@ -4,12 +4,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AppBarHome extends StatelessWidget implements PreferredSizeWidget {
-  const AppBarHome({super.key});
+  final String title;
+  const AppBarHome({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: Text("POS APP"),
+      title: Text(title.isNotEmpty ? title : "Absensi App"),
       actions: [
         Padding(
           padding: .only(right: 9.sp),
